@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralMaster.master.cs" Inherits="GeneralMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/Generalstyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="slide()">
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="top">
+            <marquee>Welcome to Swachha Bharat Abhiyaan </marquee>
+        </div>
+        <div id="header" style="background:url('swach/z.jpg');background-repeat:no-repeat;background-size:cover;">
+            <div id="heder1" style="background:rgba(0,0,0,.4); height:110px;width:100%;" >
+            <div id="logo">
+                <img src="swach/logo-1.png" style="height:110px; width:100%" /></div>
+            <div id="title">
+               <span style="color:white;font-family:'Monotype Corsiva';font-size:60px;text-shadow:2px 2px 2px black;">Welcome To Swachh Bharat Aabhiyan</span> </div>
+            </div>
+            </div>
+        <div id="menu">
+            <div id="m">
+            <asp:MENU ID="menu1" runat="server" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Scheme" Value="Scheme" NavigateUrl="~/Scheme.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Membership" Value="Membership" NavigateUrl="~/Membership.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Donation" Value="Donation" NavigateUrl="~/Donate.aspx"></asp:MenuItem>
+                    
+                    <asp:MenuItem Text="Image Gallery" Value="Image Gallery" NavigateUrl="~/ImageGallery.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                     <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Suggestion" Value="Suggestion" NavigateUrl="~/Suggestion.aspx"></asp:MenuItem>
+                    
+                </Items>
+                
+                <StaticMenuItemStyle Font-Size="Large" HorizontalPadding="45px" Font-Bold="True" ForeColor="White" VerticalPadding="10px" />
+            </asp:MENU>
+        </div>
+            </div>
+        
+       
+        <div id="heading">
+            <asp:ContentPlaceHolder ID="CPHheading" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div id="main">
+             <asp:ContentPlaceHolder ID="CPHmain" runat="server"></asp:ContentPlaceHolder>
+        </div>
+         
+        <div id="ufooter" style="color:white;">
+            <div class="ufooter1" style="text-align:center;">
+                Social Website<br/>
+               <a href="http://www.twitter.com" style="text-decoration:none;"> <img src="Images/tt.png" style="height:30px; width:30px; border-radius:15px;" /><br/></a>
+                <a href="http://www.facebook.com" style="text-decoration:none;"><img src="Images/f.png" style="height:30px; width:30px; border-radius:15px;" /><br/></a>
+            </div>
+            <div class="ufooter1">
+                Important Website <br/>
+           <a href="http://india.gov.in" style="text-decoration:none;">india.gov.in <br/></a>
+               <a href="http://www.swachhbharaturban.in" style="text-decoration:none;">www.swachhbharaturban.in <br/></a>
+                <a href="http://swachhbharat.mygov.in" style="text-decoration:none;">swachhbharat.mygov.in <br/></a>
+                <a href="http://sbm.gov.in" style="text-decoration:none;">sbm.gov.in <br/></a>
+                <a href="http://swachh.mp.gov.in" style="text-decoration:none;">swachh.mp.gov.in</a>
+            </div>
+            <div class="ufooter1">
+                 SoftproIndia Computer Technology Private<br/>
+            Limited Lucknow<br/>
+            Near New Hanuman Temple<br/>
+            Kapoorthala Aliganj Lucknow
+            Phone No:1234567890<br/>
+            Email :hr@gmail.com<br/>
+            Website:<a href="http://softproindia.org" style="text-decoration:none;">softproindia.org</a>
+            </div>
+       </div>
+        <div id="bfooter">
+            <div class="bfooter1">
+                Copyright &copy; Softpro India Computer Technology (P) Ltd.
+            </div>
+            <div class="bfooter1">
+              Developer:<a href="Developers.aspx" style="text-decoration:none;"> Technical Team Shravasti
+                         </a>
+            </div>
+            </div>
+    </div>
+    </form>
+</body>
+</html>
